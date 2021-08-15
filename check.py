@@ -18,4 +18,4 @@ class S3EnvironmentCheck(BaseResourceCheck):
         return CheckResult.FAILED
 
 
-scanner = S3EnvironmentCheck()
+check = S3EnvironmentCheck()
