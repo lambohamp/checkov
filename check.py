@@ -6,7 +6,7 @@ class S3EnvironmentCheck(BaseResourceCheck):
     def __init__(self):
         name = "Ensure s3 has environment tag of developemnt/staging/production"
         id = "CUSTOM_AWS_1"
-        supported_resources = ['*']
+        supported_resources = ['azurerm_resource_group']
         categories = [CheckCategories.GENERAL_SECURITY]
         super().__init__(name=name, id=id, categories=categories, supported_resources=supported_resources)
 
